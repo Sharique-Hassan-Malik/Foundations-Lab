@@ -1,4 +1,4 @@
-# js-crdt
+# JavaScript CRDTs
 
 **Conflict-free Replicated Data Types** (CRDTs) from scratch in JavaScript — the data structures that let many replicas be edited independently, with no central server and no locking, and still converge to the same state. A grow-only and a positive-negative **counter**, an **observed-remove set**, and an **RGA sequence** for collaborative text.
 

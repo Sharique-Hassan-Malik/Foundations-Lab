@@ -1,4 +1,4 @@
-# cpp-simdjson
+# C++ simdjson Parser
 
 A header-only **JSON parser whose byte-scanning hot loops are accelerated with AVX2 SIMD**. Recursive descent for structure (simple and correct); vectorised scanning for the two things a JSON parser spends most of its byte-walking on — **skipping whitespace** and **finding the end of a string**. A `use_simd` flag switches the scalar path back on, which is how the tests prove the two paths are identical and the benchmark measures what the SIMD earns.
 

@@ -1,4 +1,4 @@
-# js-parser-combinators
+# JavaScript Parser Combinators
 
 A **parser-combinator** library in JavaScript — the functional approach to parsing where you build a big parser by *combining* small ones. To prove it, two real parsers are assembled from it: a **JSON parser** that agrees with the platform `JSON.parse`, and an **arithmetic evaluator** with correct operator precedence and associativity.
 

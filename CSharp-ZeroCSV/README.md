@@ -1,4 +1,4 @@
-# csharp-zerocsv (ZeroCsv)
+# C# Zero-Allocation CSV Parser
 
 A **zero-allocation CSV parser** in C#, built entirely from `ref struct`s over `ReadOnlySpan<char>`. It parses the full RFC 4180 grammar — quoted fields, doubled-quote escaping (`""` → `"`), and commas or newlines embedded inside quotes — and hands every field back as a *slice of the original buffer*, so reading a whole document allocates **nothing on the heap**.
 

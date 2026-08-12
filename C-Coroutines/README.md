@@ -1,4 +1,4 @@
-# c-coroutines
+# C Stackful Coroutines
 
 Stackful, cooperative **coroutines** for C, built on a **hand-written x86-64 context switch**. A coroutine is a function that runs on its own stack and can suspend itself mid-execution (`co_yield`) and be continued later exactly where it left off (`co_resume`) — the primitive underneath generators, cooperative schedulers, and async-I/O runtimes. From scratch, including the twelve-instruction assembly switch and the fabricated first-run stack frame.
 

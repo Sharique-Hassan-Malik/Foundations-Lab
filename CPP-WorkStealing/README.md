@@ -1,4 +1,4 @@
-# cpp-workstealing
+# C++ Work-Stealing Scheduler
 
 A **work-stealing thread pool** in C++17, built on a lock-free **Chase–Lev deque** — the scheduler design at the heart of Cilk, Intel TBB, Rust's rayon, and the Go runtime. Each worker owns a double-ended queue: it pushes and pops its own tasks at one end (cheap, cache-friendly, contention-free in the common case), and when it runs dry it *steals* from the other end of a busy worker's queue. No locks are held on the hot path.
 

@@ -1,4 +1,4 @@
-# java-btree
+# Java B+ Tree
 
 An in-memory **B+ tree** in Java — the balanced, high-fan-out search tree that backs the indexes of almost every relational database (and the interior of a great many file systems). Ordered key/value storage with `O(log n)` lookup, insert and delete, plus fast ordered range scans along a chained leaf level. Built from scratch, including the fiddly parts: node splitting on insert, and borrow-or-merge rebalancing on delete.
 

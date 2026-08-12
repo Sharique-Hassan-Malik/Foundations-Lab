@@ -1,4 +1,4 @@
-# csharp-sourcegen (EnumFast)
+# C# Source Generator (EnumFast)
 
 A **Roslyn incremental source generator** in C#. Mark an enum `[EnumExtensions]` and, at *compile time*, the generator writes a `ToStringFast()` extension for it — a plain `switch` that returns the member name as a string literal — plus an `IsDefined()`. No reflection, no allocation, no runtime cost beyond a jump table.
 

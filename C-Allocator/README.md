@@ -1,4 +1,4 @@
-# c-allocator (balloc)
+# C Memory Allocator (balloc)
 
 A memory allocator — `malloc` / `free` / `realloc` / `calloc` — written from scratch in C, using a **segregated explicit free list with boundary-tag coalescing**, backed by `mmap`. The kind of allocator that sits underneath every C program, built and, crucially, *verified*.
 

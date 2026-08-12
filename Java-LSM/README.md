@@ -1,4 +1,4 @@
-# java-lsm
+# Java LSM-Tree Key-Value Store
 
 A **log-structured merge-tree** key-value store in Java — the storage engine design underneath LevelDB, RocksDB, Cassandra, and HBase. Writes append to a durable log and a sorted in-memory table; when that fills it is flushed as an immutable **SSTable** on disk; reads consult the memtable and then each SSTable newest-to-oldest, skipping tables with a **Bloom filter** and seeking with a **sparse index**; **compaction** merges SSTables and reclaims space. Built from scratch — WAL, memtable, SSTable format, bloom filter, and compaction are all here.
 
