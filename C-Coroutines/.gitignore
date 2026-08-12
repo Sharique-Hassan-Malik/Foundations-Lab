@@ -1,0 +1,14 @@
+# Build output
+*.o
+*.a
+*.so
+*.d
+*.gch
+*.out
+build/
+bin/
+obj/
+
+# Tooling
+.cache/
+compile_commands.json

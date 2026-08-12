@@ -1,0 +1,10 @@
+# Build output
+*.class
+*.jar
+build/
+bin/
+out/
+target/
+
+# Tooling
+.gradle/

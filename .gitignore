@@ -1,0 +1,21 @@
+# C / C++ build outputs
+c-allocator/test_balloc
+c-allocator/bench_balloc
+cpp-workstealing/test_ws
+cpp-workstealing/bench_ws
+*.o
+*.out
+
+# Java
+**/build/
+*.class
+
+# C# / .NET
+**/bin/
+**/obj/
+
+# Node
+**/node_modules/
+
+# misc
+.DS_Store

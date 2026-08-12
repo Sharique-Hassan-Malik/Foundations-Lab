@@ -1,0 +1,11 @@
+{
+  "name": "js-parser-combinators",
+  "version": "1.0.0",
+  "description": "A parser-combinator library from scratch, with a JSON parser and an arithmetic evaluator built from it.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node demo/run.js"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+TestResults/
+*.nupkg
+
+# IDE
+.vs/
+*.user
+*.suo

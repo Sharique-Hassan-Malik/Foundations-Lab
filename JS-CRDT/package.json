@@ -1,0 +1,11 @@
+{
+  "name": "js-crdt",
+  "version": "1.0.0",
+  "description": "Conflict-free replicated data types (CRDTs) from scratch: counters, an observed-remove set, and an RGA sequence for collaborative text.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node demo/collab.js"
+  },
+  "license": "MIT"
+}
