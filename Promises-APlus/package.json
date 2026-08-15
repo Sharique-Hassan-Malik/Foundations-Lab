@@ -1,0 +1,15 @@
+{
+  "name": "promises-aplus-from-scratch",
+  "version": "1.0.0",
+  "description": "A Promise implementation from scratch, verified against the official Promises/A+ conformance suite",
+  "type": "module",
+  "license": "MIT",
+  "author": "Sharique Hassan Malik",
+  "scripts": {
+    "test": "node --test test/promise.test.js",
+    "conformance": "node test/run-aplus.mjs"
+  },
+  "devDependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "reactive-signals",
+  "version": "1.0.0",
+  "description": "Fine-grained, glitch-free reactive signals from scratch",
+  "type": "module",
+  "license": "MIT",
+  "author": "Sharique Hassan Malik",
+  "scripts": {
+    "test": "node --test",
+    "bench": "node bench/diamond.js"
+  }
+}
