@@ -28,7 +28,7 @@ The footer is the trick that makes freeing cheap. Given a block's payload `bp`:
 
 So `coalesce` inspects the allocated bits of both neighbours and handles four cases: neither free (nothing to do), only the next free (absorb it rightward), only the previous free (absorb leftward), or both free (absorb both). In each case the absorbed neighbours are unlinked from their free lists and the merged block's header and footer are rewritten to the combined size. Coalescing on every free is what guarantees the invariant "no two physically adjacent free blocks," which in turn bounds external fragmentation.
 
-The free-block accounting lives with this: absorbing a neighbour decrements the free-block count and its payload from the running totals, and the caller re-adds the merged block once — so `bytes_in_use`/`bytes_free` stay exact. (Getting that wrong on the coalesce path was the one bug the unit tests caught; the stress test's byte-accounting assertion guards it now.)
+The free-block accounting lives with this: absorbing a neighbour decrements the free-block count and its payload from the running totals, and the caller re-adds the merged block once — so `bytes_in_use`/`bytes_free` stay exact. The stress test's byte-accounting assertion guards the coalesce path, which is the easiest place to get it wrong.
 
 ## Segregated free lists
 

@@ -24,7 +24,7 @@ pool: work actually gets stolen on an unbalanced load
 ALL TESTS PASSED
 ```
 
-The whole suite is also clean under **AddressSanitizer** — which is how a real bug was found and fixed during development: letting an outside thread push directly onto a worker's deque violated the deque's single-owner rule and caused a task to be taken twice. External submissions now go through a small global queue; only a worker ever pushes to its own deque.
+The whole suite is also clean under **AddressSanitizer**, which is what enforces the deque's single-owner rule: an outside thread pushing directly onto a worker's deque lets a task be taken twice. External submissions go through a small global queue, and only a worker ever pushes to its own deque.
 
 ## Scaling
 
