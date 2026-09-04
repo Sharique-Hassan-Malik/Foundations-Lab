@@ -1,0 +1,4 @@
+test_deflate
+gzdeflate
+bench_deflate
+*.o
